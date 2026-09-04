@@ -7,7 +7,7 @@
   "exports": "./src/index.js",
   "scripts": {
     "test": "node --test",
-    "lint": "node --check src/*.js",
+    "lint": "node --check src/cli.js && node --check src/index.js && node --check src/sieve.js",
     "check": "npm run lint && npm test"
   },
   "keywords": ["ai", "llm", "context", "developer-tools", "cli", "agents"],
