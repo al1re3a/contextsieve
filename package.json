@@ -12,6 +12,9 @@
   },
   "keywords": ["ai", "llm", "context", "developer-tools", "cli", "agents"],
   "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/al1re3a/contextsieve.git" },
+  "bugs": { "url": "https://github.com/al1re3a/contextsieve/issues" },
+  "homepage": "https://github.com/al1re3a/contextsieve#readme",
   "engines": { "node": ">=20" },
   "files": ["src", "README.md", "LICENSE"]
 }

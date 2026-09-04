@@ -1,5 +1,7 @@
 # ContextSieve
 
+[![CI](https://github.com/al1re3a/contextsieve/actions/workflows/ci.yml/badge.svg)](https://github.com/al1re3a/contextsieve/actions/workflows/ci.yml)
+
 **Give AI the files it needs — not your whole repository.**
 
 ContextSieve is a zero-dependency CLI that ranks repository files for a task, fits the best ones inside a token budget, and redacts common secrets before producing Markdown, XML, or JSON.
