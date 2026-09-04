@@ -1,0 +1,17 @@
+{
+  "name": "contextsieve",
+  "version": "1.0.0",
+  "description": "Turn any repository into a focused, secret-safe LLM context bundle.",
+  "type": "module",
+  "bin": { "contextsieve": "src/cli.js" },
+  "exports": "./src/index.js",
+  "scripts": {
+    "test": "node --test",
+    "lint": "node --check src/*.js",
+    "check": "npm run lint && npm test"
+  },
+  "keywords": ["ai", "llm", "context", "developer-tools", "cli", "agents"],
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "files": ["src", "README.md", "LICENSE"]
+}
