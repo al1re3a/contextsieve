@@ -12,7 +12,7 @@ const SECRET_PATTERNS = [
   [/\b(?:sk|pk)-[A-Za-z0-9_-]{16,}\b/g, '[REDACTED_API_KEY]'],
   [/\bgh[pousr]_[A-Za-z0-9]{20,}\b/g, '[REDACTED_GITHUB_TOKEN]'],
   [/\bAKIA[0-9A-Z]{16}\b/g, '[REDACTED_AWS_KEY]'],
-  [/\b(?:Bearer\s+)[A-Za-z0-9._~+\/-]+=*\b/gi, 'Bearer [REDACTED]'],
+  [/\b(?:Bearer\s+)[A-Za-z0-9._~+\/-]{16,}=*\b/gi, 'Bearer [REDACTED]'],
   [/((?:password|passwd|secret|token|api[_-]?key)\s*[:=]\s*)['"]?[^\s'";,]+/gi, '$1[REDACTED]']
 ];
 

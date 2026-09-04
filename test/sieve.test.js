@@ -6,9 +6,13 @@ import path from 'node:path';
 import { buildBundle, collectFiles, rankFiles, redactSecrets } from '../src/index.js';
 
 test('redacts common credentials', () => {
-  const input = 'token=ghp_abcdefghijklmnopqrstuvwxyz123456 password=hunter2';
+  const input = 'token=ghp_abcdefghijklmnopqrstuvwxyz123456 password=hunter2 Bearer abcdefghijklmnopqrstuvwxyz';
   const output = redactSecrets(input);
-  assert.doesNotMatch(output, /ghp_|hunter2/);
+  assert.doesNotMatch(output, /ghp_|hunter2|abcdefghijklmnopqrstuvwxyz/);
+});
+
+test('does not redact ordinary bearer prose', () => {
+  assert.equal(redactSecrets('supports bearer credentials safely'), 'supports bearer credentials safely');
 });
 
 test('query ranking favors matching source', () => {
