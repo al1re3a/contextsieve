@@ -1,6 +1,96 @@
-# ContextSieve
+<!-- readme-refresh:start -->
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/readme-banner.png">
+    <source media="(prefers-color-scheme: light)" srcset="assets/readme-banner.png">
+    <img alt="ContextSieve project banner" src="assets/readme-banner.png" width="100%">
+  </picture>
+</p>
 
-[![CI](https://github.com/al1re3a/contextsieve/actions/workflows/ci.yml/badge.svg)](https://github.com/al1re3a/contextsieve/actions/workflows/ci.yml)
+<h1 align="center">🧺 ContextSieve</h1>
+
+<p align="center"><strong>Turn a repository into focused, secret-aware context for coding agents.</strong></p>
+
+<p align="center">
+  <a href="https://github.com/al1re3a/contextsieve/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/al1re3a/contextsieve/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://nodejs.org/"><img alt="Node.js" src="https://img.shields.io/badge/Node.js-20%2B-339933?logo=nodedotjs&logoColor=white"></a>
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-fbbf24.svg"></a>
+  <a href="https://github.com/al1re3a/contextsieve/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/al1re3a/contextsieve?style=flat&color=8b5cf6"></a>
+  <a href="https://github.com/al1re3a/contextsieve/issues"><img alt="Open issues" src="https://img.shields.io/github/issues/al1re3a/contextsieve?style=flat&color=06b6d4"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/al1re3a/contextsieve"><img alt="Source" src="https://img.shields.io/badge/Source-open-111827?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="#usage"><img alt="Quick Start" src="https://img.shields.io/badge/Quick_Start-open-0f766e?style=for-the-badge&logo=gnubash&logoColor=white"></a>
+  <a href="CONTRIBUTING.md"><img alt="Contribute" src="https://img.shields.io/badge/Contribute-open-7c3aed?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="SECURITY.md"><img alt="Security" src="https://img.shields.io/badge/Security-open-b91c1c?style=for-the-badge&logo=securityscorecard&logoColor=white"></a>
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=nodejs,githubactions" alt="Node.js and GitHub Actions" height="42">
+</p>
+
+> [!NOTE]
+> Secret filtering is a defensive layer, not a guarantee. Review generated context before sending it to another service.
+
+## 📑 Contents
+
+- [At a glance](#-at-a-glance)
+- [Why](#why)
+- [Features](#features)
+- [Usage](#usage)
+- [API](#api)
+- [Development](#development)
+- [Roadmap](#roadmap)
+
+---
+
+## 🔎 At a glance
+
+| | |
+|---|---|
+| **Purpose** | Turn any repository into focused, secret-safe context for coding agents and LLMs. |
+| **Input** | Repository tree |
+| **Output** | Focused context bundle |
+| **Runtime** | Node.js 20+ |
+| **CI** | ✅ Linux |
+| **Status** | ✅ Maintained |
+
+<details>
+<summary><strong>🧭 How it works</strong></summary>
+
+```mermaid
+flowchart LR
+    A["Repository tree"] --> B["Filter and rank"]
+    B --> C["Focused context bundle"]
+```
+
+</details>
+
+<details>
+<summary><strong>📁 Repository layout</strong></summary>
+
+```text
+contextsieve/
+├── .github/
+├── src/
+├── test/
+├── package.json
+└── README.md
+```
+
+</details>
+
+<details>
+<summary><strong>🤝 Contributors</strong></summary>
+
+<br>
+<a href="https://github.com/al1re3a/contextsieve/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=al1re3a/contextsieve" alt="Contributors">
+</a>
+
+</details>
+<!-- readme-refresh:end -->
 
 **Give AI the files it needs — not your whole repository.**
 
